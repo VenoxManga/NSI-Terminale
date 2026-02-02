@@ -39,4 +39,26 @@
 
 ---
 
-## 4. Encapsulation (Interface
+## 4. Encapsulation (Interface et Implémentation)
+
+### 4.1 Interface
+* Ce que l'utilisateur voit et utilise (les méthodes publiques).
+
+### 4.2 Implémentation
+* Le code interne "caché". L'utilisateur n'a pas besoin de savoir *comment* c'est codé, seulement *comment* s'en servir.
+
+---
+
+## 🐍 Exemple de synthèse (Code)
+
+```python
+class Disque:
+    def __init__(self, diametre):
+        self.diametre = diametre  # Attribut
+        
+    def get_rayon(self):         # Méthode
+        return self.diametre / 2
+
+# Création d'une instance
+disque1 = Disque(10)
+print(disque1.get_rayon()) # Affiche 5.0
